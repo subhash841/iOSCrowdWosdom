@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BasicCollectionViewCell" customModule="CrowdWisdom" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vv3-H7-Rse">
+                        <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DONT MISS OUT" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zp-lG-Nva">
+                                <rect key="frame" x="13" y="8" width="145" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="1FL-KX-jHc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13O-KN-75C">
+                                <rect key="frame" x="13" y="90" width="145" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="fGw-6x-0w1"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Top Rated From Web">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="10" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iq6-5j-zvA">
+                                <rect key="frame" x="13" y="129" width="75" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="QhU-re-dew"/>
+                                    <constraint firstAttribute="height" constant="23" id="xFP-wD-2J5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="9"/>
+                                <state key="normal" title="VIEW MORE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1zp-lG-Nva" firstAttribute="leading" secondItem="Vv3-H7-Rse" secondAttribute="leading" constant="13" id="2k3-3x-SAO"/>
+                            <constraint firstItem="13O-KN-75C" firstAttribute="leading" secondItem="1zp-lG-Nva" secondAttribute="leading" id="3gV-MJ-e7Q"/>
+                            <constraint firstItem="13O-KN-75C" firstAttribute="trailing" secondItem="1zp-lG-Nva" secondAttribute="trailing" id="DeK-jF-bbU"/>
+                            <constraint firstAttribute="trailing" secondItem="1zp-lG-Nva" secondAttribute="trailing" constant="12" id="XhA-Mq-8yw"/>
+                            <constraint firstItem="iq6-5j-zvA" firstAttribute="top" secondItem="13O-KN-75C" secondAttribute="bottom" constant="15" id="bzw-sp-oNg"/>
+                            <constraint firstAttribute="bottom" secondItem="iq6-5j-zvA" secondAttribute="bottom" constant="18" id="jXY-nk-Ebt"/>
+                            <constraint firstItem="iq6-5j-zvA" firstAttribute="leading" secondItem="13O-KN-75C" secondAttribute="leading" id="pu3-Tn-KdU"/>
+                            <constraint firstItem="1zp-lG-Nva" firstAttribute="top" secondItem="Vv3-H7-Rse" secondAttribute="top" constant="8" id="v9a-Zx-ht5"/>
+                            <constraint firstItem="13O-KN-75C" firstAttribute="top" secondItem="1zp-lG-Nva" secondAttribute="bottom" constant="2" id="x44-SB-NYK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Vv3-H7-Rse" secondAttribute="trailing" id="3Vm-0p-xfw"/>
+                <constraint firstAttribute="bottom" secondItem="Vv3-H7-Rse" secondAttribute="bottom" id="fWS-e9-hID"/>
+                <constraint firstItem="Vv3-H7-Rse" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="uk6-Lg-7mN"/>
+                <constraint firstItem="Vv3-H7-Rse" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wuP-tH-1sr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="170" height="170"/>
+            <connections>
+                <outlet property="topicNameLabel" destination="1zp-lG-Nva" id="1dR-UP-6g3"/>
+                <outlet property="viewMoreButton" destination="iq6-5j-zvA" id="56p-bv-THJ"/>
+            </connections>
+            <point key="canvasLocation" x="-60.799999999999997" y="125.93703148425789"/>
+        </collectionViewCell>
+    </objects>
+</document>

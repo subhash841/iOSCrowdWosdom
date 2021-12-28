@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="finalsplashIcon" translatesAutoresizingMaskIntoConstraints="NO" id="VGN-SV-JHS">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="finalsplashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="6yA-jv-5lV">
+                                <rect key="frame" x="85" y="180" width="150" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="X5r-Oz-juI"/>
+                                    <constraint firstAttribute="height" constant="120" id="xjj-08-7r3"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6yA-jv-5lV" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ACx-hK-rHl"/>
+                            <constraint firstItem="6yA-jv-5lV" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Gvj-1M-XAC"/>
+                            <constraint firstItem="VGN-SV-JHS" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="RjA-Ca-eUP"/>
+                            <constraint firstItem="VGN-SV-JHS" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="aZ9-hh-Zfp"/>
+                            <constraint firstAttribute="bottom" secondItem="VGN-SV-JHS" secondAttribute="bottom" id="eEg-pk-iBA"/>
+                            <constraint firstAttribute="trailing" secondItem="VGN-SV-JHS" secondAttribute="trailing" id="rFu-d4-UQ4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="finalsplashIcon" width="640" height="960"/>
+        <image name="finalsplashLogo" width="300" height="232"/>
+    </resources>
+</document>

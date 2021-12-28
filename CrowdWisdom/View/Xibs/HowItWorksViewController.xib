@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HowItWorksViewController" customModule="CrowdWisdom" customModuleProvider="target">
+            <connections>
+                <outlet property="dataView" destination="AJM-U8-Dq4" id="j05-MW-5IK"/>
+                <outlet property="howItWorksTableView" destination="dw4-51-DeJ" id="H3m-8Z-e0n"/>
+                <outlet property="startVotingButton" destination="1Uo-3c-eBf" id="LuC-hy-wQO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="640"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dw4-51-DeJ">
+                    <rect key="frame" x="20" y="40" width="280" height="600"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </tableView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIH-fc-cmJ">
+                    <rect key="frame" x="10" y="20" width="300" height="620"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AJM-U8-Dq4">
+                            <rect key="frame" x="10" y="20" width="280" height="490"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="How It Works" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4U7-2V-SJe">
+                                    <rect key="frame" x="88" y="15" width="105" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="hnl-8g-NSO"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xlr-gi-hyY">
+                                    <rect key="frame" x="10" y="40" width="260" height="2"/>
+                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="2" id="7fn-zn-xcP"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 1 :Pay &amp; Start Voting" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v58-Gm-Mhu">
+                                    <rect key="frame" x="15" y="60" width="250" height="18"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="18" id="c8a-aP-xbv"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                    <color key="textColor" red="0.27843137254901962" green="0.16470588235294117" blue="0.56862745098039214" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stepOne" translatesAutoresizingMaskIntoConstraints="NO" id="czT-5R-Uk6">
+                                    <rect key="frame" x="99" y="86" width="80" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="80" id="5zV-38-5Hw"/>
+                                        <constraint firstAttribute="height" constant="80" id="hh1-cf-FqJ"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 2 :Vote to Participate in The Game" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0I-QI-XL6">
+                                    <rect key="frame" x="15" y="196" width="250" height="35.5"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                    <color key="textColor" red="1" green="0.32941176470588235" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steptwo" translatesAutoresizingMaskIntoConstraints="NO" id="Aq9-ce-Nuc">
+                                    <rect key="frame" x="99" y="239.5" width="80" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="80" id="Ls3-4f-fJT"/>
+                                        <constraint firstAttribute="width" constant="80" id="gM9-8a-I3u"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 3 :Play The Game &amp; Win Cash Prize" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wJ-R9-mkg">
+                                    <rect key="frame" x="15" y="353" width="250" height="35.5"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                    <color key="textColor" red="0.0" green="0.396078431372549" blue="0.47843137254901957" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stepThree" translatesAutoresizingMaskIntoConstraints="NO" id="vb3-Jc-ajL">
+                                    <rect key="frame" x="99" y="396.5" width="80" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="80" id="0HO-8t-WvE"/>
+                                        <constraint firstAttribute="width" constant="80" id="arQ-mc-0lW"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="4U7-2V-SJe" firstAttribute="centerX" secondItem="AJM-U8-Dq4" secondAttribute="centerX" constant="0.5" id="6ot-Pn-Tb2"/>
+                                <constraint firstItem="Xlr-gi-hyY" firstAttribute="top" secondItem="4U7-2V-SJe" secondAttribute="bottom" constant="5" id="9FN-Eo-pff"/>
+                                <constraint firstItem="Aq9-ce-Nuc" firstAttribute="centerX" secondItem="AJM-U8-Dq4" secondAttribute="centerX" constant="-1" id="DcD-tZ-qsX"/>
+                                <constraint firstItem="v58-Gm-Mhu" firstAttribute="centerX" secondItem="AJM-U8-Dq4" secondAttribute="centerX" id="F2L-8K-TN4"/>
+                                <constraint firstAttribute="bottom" secondItem="vb3-Jc-ajL" secondAttribute="bottom" constant="13.5" id="GLj-1y-YTr"/>
+                                <constraint firstItem="n0I-QI-XL6" firstAttribute="top" secondItem="czT-5R-Uk6" secondAttribute="bottom" constant="30" id="K3r-NZ-Uid"/>
+                                <constraint firstItem="Xlr-gi-hyY" firstAttribute="centerX" secondItem="AJM-U8-Dq4" secondAttribute="centerX" id="KZ2-IT-Xx7"/>
+                                <constraint firstItem="Aq9-ce-Nuc" firstAttribute="top" secondItem="n0I-QI-XL6" secondAttribute="bottom" constant="8" id="Ll2-nj-CqP"/>
+                                <constraint firstItem="Xlr-gi-hyY" firstAttribute="leading" secondItem="AJM-U8-Dq4" secondAttribute="leading" constant="10" id="NMM-Pw-GwL"/>
+                                <constraint firstItem="n0I-QI-XL6" firstAttribute="centerX" secondItem="AJM-U8-Dq4" secondAttribute="centerX" id="OE1-bf-4aO"/>
+                                <constraint firstAttribute="trailing" secondItem="8wJ-R9-mkg" secondAttribute="trailing" constant="15" id="Uh3-fw-X0E"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="475" id="VOh-cx-QMu"/>
+                                <constraint firstItem="8wJ-R9-mkg" firstAttribute="centerX" secondItem="AJM-U8-Dq4" secondAttribute="centerX" id="aJG-bh-is8"/>
+                                <constraint firstItem="v58-Gm-Mhu" firstAttribute="top" secondItem="Xlr-gi-hyY" secondAttribute="bottom" constant="18" id="c7x-YY-akJ"/>
+                                <constraint firstItem="8wJ-R9-mkg" firstAttribute="leading" secondItem="AJM-U8-Dq4" secondAttribute="leading" constant="15" id="cOg-Of-ZsQ"/>
+                                <constraint firstItem="czT-5R-Uk6" firstAttribute="top" secondItem="v58-Gm-Mhu" secondAttribute="bottom" constant="8" id="dgr-8U-hcK"/>
+                                <constraint firstAttribute="trailing" secondItem="n0I-QI-XL6" secondAttribute="trailing" constant="15" id="djI-ah-Yft"/>
+                                <constraint firstItem="v58-Gm-Mhu" firstAttribute="leading" secondItem="AJM-U8-Dq4" secondAttribute="leading" constant="15" id="hD9-6c-K6I"/>
+                                <constraint firstItem="czT-5R-Uk6" firstAttribute="centerX" secondItem="AJM-U8-Dq4" secondAttribute="centerX" constant="-1" id="mbP-XW-pc3"/>
+                                <constraint firstItem="n0I-QI-XL6" firstAttribute="leading" secondItem="AJM-U8-Dq4" secondAttribute="leading" constant="15" id="o72-kG-PxI"/>
+                                <constraint firstAttribute="trailing" secondItem="Xlr-gi-hyY" secondAttribute="trailing" constant="10" id="qsx-KQ-MzF"/>
+                                <constraint firstItem="vb3-Jc-ajL" firstAttribute="top" secondItem="8wJ-R9-mkg" secondAttribute="bottom" constant="8" id="rTY-gp-VdC"/>
+                                <constraint firstItem="8wJ-R9-mkg" firstAttribute="top" secondItem="Aq9-ce-Nuc" secondAttribute="bottom" constant="33.5" id="vW7-5U-AMq"/>
+                                <constraint firstItem="vb3-Jc-ajL" firstAttribute="centerX" secondItem="AJM-U8-Dq4" secondAttribute="centerX" constant="-1" id="wnL-TP-Pvx"/>
+                                <constraint firstItem="4U7-2V-SJe" firstAttribute="top" secondItem="AJM-U8-Dq4" secondAttribute="top" constant="15" id="z9U-zA-2qG"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Uo-3c-eBf">
+                            <rect key="frame" x="75" y="534" width="150" height="30"/>
+                            <color key="backgroundColor" red="0.0" green="0.64313725490196072" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="i6W-dB-4VW"/>
+                                <constraint firstAttribute="height" constant="30" id="sfD-mQ-O8L"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                            <state key="normal" title="Start Voting">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="startVotingBtnAction:" destination="-1" eventType="touchUpInside" id="VLo-Kl-rBy"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="AJM-U8-Dq4" firstAttribute="centerX" secondItem="1Uo-3c-eBf" secondAttribute="centerX" id="5RA-Uu-LdP"/>
+                        <constraint firstItem="1Uo-3c-eBf" firstAttribute="centerX" secondItem="DIH-fc-cmJ" secondAttribute="centerX" id="Fny-aa-UKc"/>
+                        <constraint firstAttribute="trailing" secondItem="AJM-U8-Dq4" secondAttribute="trailing" constant="10" id="GNd-76-JiB"/>
+                        <constraint firstItem="AJM-U8-Dq4" firstAttribute="leading" secondItem="DIH-fc-cmJ" secondAttribute="leading" constant="10" id="KoF-RE-zES"/>
+                        <constraint firstItem="AJM-U8-Dq4" firstAttribute="top" secondItem="DIH-fc-cmJ" secondAttribute="top" constant="20" id="Tzo-5r-hS4"/>
+                        <constraint firstAttribute="bottom" secondItem="1Uo-3c-eBf" secondAttribute="bottom" constant="56" id="c5u-Ua-VZH"/>
+                        <constraint firstItem="1Uo-3c-eBf" firstAttribute="top" secondItem="AJM-U8-Dq4" secondAttribute="bottom" constant="24" id="lp6-tn-Ovp"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="DIH-fc-cmJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="8Yh-Qg-hE5"/>
+                <constraint firstItem="DIH-fc-cmJ" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="FAa-mf-Hpf"/>
+                <constraint firstItem="DIH-fc-cmJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="GUD-V0-WcB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DIH-fc-cmJ" secondAttribute="trailing" constant="10" id="IV5-n7-oOV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dw4-51-DeJ" secondAttribute="trailing" constant="20" id="JA8-QX-DdL"/>
+                <constraint firstItem="dw4-51-DeJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="hP7-VG-D6s"/>
+                <constraint firstItem="dw4-51-DeJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="iYy-8Q-ZRx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dw4-51-DeJ" secondAttribute="bottom" id="xIS-8c-78x"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="63.75" y="167.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="stepOne" width="300" height="263"/>
+        <image name="stepThree" width="300" height="376"/>
+        <image name="steptwo" width="300" height="300"/>
+    </resources>
+</document>

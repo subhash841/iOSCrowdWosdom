@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CompetitionPopupViewController" customModule="CrowdWisdom" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonStackView" destination="FI0-mF-RSB" id="K0p-0C-5mn"/>
+                <outlet property="cancelButton" destination="ObB-42-dMB" id="t7i-wP-tVd"/>
+                <outlet property="headerLabel" destination="pNM-nC-1QW" id="8oc-bT-KW6"/>
+                <outlet property="mainViewHeightConstraints" destination="d2a-WX-l4N" id="8fI-TP-w9b"/>
+                <outlet property="playButton" destination="RaS-EN-NvW" id="6X3-nU-UIy"/>
+                <outlet property="pointsRequiredLabel" destination="ujO-6S-NID" id="xvJ-yr-rbW"/>
+                <outlet property="sufficientPointsView" destination="Qsc-Xv-mHD" id="GKZ-hs-EkY"/>
+                <outlet property="sufficientPointsViewHeight" destination="MhD-fF-lUA" id="Jie-DT-inO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="220"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C9I-3A-JCE">
+                    <rect key="frame" x="0.0" y="0.0" width="280" height="220"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="finalsplashIcon" translatesAutoresizingMaskIntoConstraints="NO" id="VRy-N0-2Gy">
+                            <rect key="frame" x="0.0" y="0.0" width="280" height="220"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOF-Rf-iwt">
+                            <rect key="frame" x="10" y="20" width="260" height="140"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="140" id="wfN-to-UZH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.20000000000000001"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                    <real key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Competitions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNM-nC-1QW">
+                            <rect key="frame" x="98" y="30" width="84" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="ud7-ZK-vhg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujO-6S-NID">
+                            <rect key="frame" x="25" y="60" width="230" height="0.0"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qsc-Xv-mHD">
+                            <rect key="frame" x="30" y="67" width="220" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You do not have sufficient silver points. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmL-s9-U2j">
+                                    <rect key="frame" x="10" y="5" width="200" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="0.30196078431372547" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="MhD-fF-lUA"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ObB-42-dMB">
+                            <rect key="frame" x="90" y="170" width="100" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="aid-uj-Ale"/>
+                                <constraint firstAttribute="height" constant="30" id="xG8-31-SCN"/>
+                            </constraints>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="cancelButtonAction:" destination="-1" eventType="touchUpInside" id="luh-lY-3fN"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="FI0-mF-RSB">
+                            <rect key="frame" x="30" y="170" width="220" height="30"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kY6-xq-o8h">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="EOy-fA-2Ka"/>
+                                        <constraint firstAttribute="height" constant="30" id="cQQ-tZ-8ks"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                    <state key="normal" title="Cancel">
+                                        <color key="titleColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="15"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="cancelButtonAction:" destination="-1" eventType="touchUpInside" id="oUq-tC-cWz"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RaS-EN-NvW">
+                                    <rect key="frame" x="120" y="0.0" width="100" height="30"/>
+                                    <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="ZW5-6Y-PQd"/>
+                                        <constraint firstAttribute="width" constant="100" id="ac3-61-yJX"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                    <state key="normal" title="Play">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="15"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="playButtonAction:" destination="-1" eventType="touchUpInside" id="3hG-Fr-i4D"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Qsc-Xv-mHD" firstAttribute="leading" secondItem="C9I-3A-JCE" secondAttribute="leading" constant="30" id="1qj-AG-tsc"/>
+                        <constraint firstItem="FI0-mF-RSB" firstAttribute="trailing" secondItem="Qsc-Xv-mHD" secondAttribute="trailing" id="3Mo-bd-Ic6"/>
+                        <constraint firstAttribute="bottom" secondItem="VRy-N0-2Gy" secondAttribute="bottom" id="5Tg-TL-h9Q"/>
+                        <constraint firstItem="ObB-42-dMB" firstAttribute="top" secondItem="iOF-Rf-iwt" secondAttribute="bottom" constant="10" id="6Sw-UZ-DQc"/>
+                        <constraint firstItem="VRy-N0-2Gy" firstAttribute="leading" secondItem="C9I-3A-JCE" secondAttribute="leading" id="6kt-el-pqI"/>
+                        <constraint firstItem="ObB-42-dMB" firstAttribute="centerX" secondItem="C9I-3A-JCE" secondAttribute="centerX" id="A1m-yV-vBY"/>
+                        <constraint firstAttribute="trailing" secondItem="Qsc-Xv-mHD" secondAttribute="trailing" constant="30" id="Abu-VC-uhF"/>
+                        <constraint firstItem="pNM-nC-1QW" firstAttribute="centerX" secondItem="C9I-3A-JCE" secondAttribute="centerX" id="BkV-6t-kuK"/>
+                        <constraint firstItem="VRy-N0-2Gy" firstAttribute="top" secondItem="C9I-3A-JCE" secondAttribute="top" id="ERi-GW-XEZ"/>
+                        <constraint firstItem="FI0-mF-RSB" firstAttribute="leading" secondItem="Qsc-Xv-mHD" secondAttribute="leading" id="Knt-oC-N0z"/>
+                        <constraint firstItem="Qsc-Xv-mHD" firstAttribute="centerX" secondItem="C9I-3A-JCE" secondAttribute="centerX" id="NJl-yo-ylu"/>
+                        <constraint firstItem="Qsc-Xv-mHD" firstAttribute="top" secondItem="ujO-6S-NID" secondAttribute="bottom" constant="7" id="ORY-ra-RBG"/>
+                        <constraint firstItem="iOF-Rf-iwt" firstAttribute="top" secondItem="C9I-3A-JCE" secondAttribute="top" constant="20" id="R9S-72-HS9"/>
+                        <constraint firstItem="ujO-6S-NID" firstAttribute="top" secondItem="pNM-nC-1QW" secondAttribute="bottom" constant="10" id="VKJ-e2-bJO"/>
+                        <constraint firstAttribute="trailing" secondItem="ujO-6S-NID" secondAttribute="trailing" constant="25" id="WCC-r1-zhg"/>
+                        <constraint firstItem="ujO-6S-NID" firstAttribute="leading" secondItem="C9I-3A-JCE" secondAttribute="leading" constant="25" id="WnH-rD-gFr"/>
+                        <constraint firstAttribute="trailing" secondItem="VRy-N0-2Gy" secondAttribute="trailing" id="cEv-Fc-RZk"/>
+                        <constraint firstAttribute="height" constant="220" id="d2a-WX-l4N"/>
+                        <constraint firstAttribute="bottom" secondItem="FI0-mF-RSB" secondAttribute="bottom" constant="20" id="eFm-sH-cd0"/>
+                        <constraint firstItem="iOF-Rf-iwt" firstAttribute="leading" secondItem="C9I-3A-JCE" secondAttribute="leading" constant="10" id="f99-r2-G6F"/>
+                        <constraint firstAttribute="bottom" secondItem="ObB-42-dMB" secondAttribute="bottom" constant="20" id="gvu-SJ-pZt"/>
+                        <constraint firstAttribute="trailing" secondItem="iOF-Rf-iwt" secondAttribute="trailing" constant="10" id="kmA-GD-g5l"/>
+                        <constraint firstItem="pNM-nC-1QW" firstAttribute="top" secondItem="C9I-3A-JCE" secondAttribute="top" constant="30" id="npy-1C-7Ly"/>
+                        <constraint firstItem="FI0-mF-RSB" firstAttribute="top" secondItem="iOF-Rf-iwt" secondAttribute="bottom" constant="10" id="s7l-nu-idZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="C9I-3A-JCE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="MDJ-0L-Xc8"/>
+                <constraint firstItem="C9I-3A-JCE" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="aMR-BS-WUK"/>
+                <constraint firstItem="C9I-3A-JCE" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="iOc-ca-hcI"/>
+                <constraint firstItem="C9I-3A-JCE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="n7d-7O-OV0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.59999999999999" y="147.52623688155924"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="finalsplashIcon" width="640" height="960"/>
+    </resources>
+</document>

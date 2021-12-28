@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="160" id="KGk-i7-Jjw" customClass="CompetitionInfoRewardCell" customModule="CrowdWisdom" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="159.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZPF-Yq-gKe">
+                        <rect key="frame" x="15" y="5" width="290" height="149.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rewards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyH-0i-HwE">
+                                <rect key="frame" x="8" y="8" width="59" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="N2G-sF-LU9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUe-c6-NR3">
+                                <rect key="frame" x="8" y="26" width="59" height="2"/>
+                                <color key="backgroundColor" red="0.0" green="0.63529411759999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="hqa-jJ-uM9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="competitionRewardIcon" translatesAutoresizingMaskIntoConstraints="NO" id="p2d-F7-dFo">
+                                <rect key="frame" x="105" y="35" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="1CF-Cw-KOv"/>
+                                    <constraint firstAttribute="width" constant="80" id="BqI-Lr-RYH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rewards" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zia-2I-szd">
+                                <rect key="frame" x="20" y="122" width="250" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="v35-dN-F5F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yyH-0i-HwE" firstAttribute="leading" secondItem="ZPF-Yq-gKe" secondAttribute="leading" constant="8" id="4Li-bl-k92"/>
+                            <constraint firstItem="BUe-c6-NR3" firstAttribute="top" secondItem="yyH-0i-HwE" secondAttribute="bottom" id="Ftl-4R-RoN"/>
+                            <constraint firstItem="Zia-2I-szd" firstAttribute="top" secondItem="p2d-F7-dFo" secondAttribute="bottom" constant="7" id="HGO-Em-jh0"/>
+                            <constraint firstAttribute="bottom" secondItem="Zia-2I-szd" secondAttribute="bottom" constant="10.5" id="Maz-bl-XbH"/>
+                            <constraint firstItem="BUe-c6-NR3" firstAttribute="width" secondItem="yyH-0i-HwE" secondAttribute="width" id="NQ6-1U-78Q"/>
+                            <constraint firstItem="BUe-c6-NR3" firstAttribute="leading" secondItem="yyH-0i-HwE" secondAttribute="leading" id="OFx-hJ-XjJ"/>
+                            <constraint firstItem="Zia-2I-szd" firstAttribute="leading" secondItem="ZPF-Yq-gKe" secondAttribute="leading" constant="20" id="RSR-xY-QjP"/>
+                            <constraint firstItem="yyH-0i-HwE" firstAttribute="top" secondItem="ZPF-Yq-gKe" secondAttribute="top" constant="8" id="jRp-XH-Qge"/>
+                            <constraint firstItem="p2d-F7-dFo" firstAttribute="top" secondItem="BUe-c6-NR3" secondAttribute="bottom" constant="7" id="mYq-Fd-TRs"/>
+                            <constraint firstItem="Zia-2I-szd" firstAttribute="centerX" secondItem="ZPF-Yq-gKe" secondAttribute="centerX" id="pnH-lv-T1g"/>
+                            <constraint firstItem="p2d-F7-dFo" firstAttribute="centerX" secondItem="ZPF-Yq-gKe" secondAttribute="centerX" id="vCi-Xs-adi"/>
+                            <constraint firstAttribute="trailing" secondItem="Zia-2I-szd" secondAttribute="trailing" constant="20" id="yLt-vd-W6X"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="ZPF-Yq-gKe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Bwm-V2-dno"/>
+                    <constraint firstAttribute="trailing" secondItem="ZPF-Yq-gKe" secondAttribute="trailing" constant="15" id="No0-fG-F3G"/>
+                    <constraint firstItem="ZPF-Yq-gKe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Ulo-1j-3ey"/>
+                    <constraint firstAttribute="bottom" secondItem="ZPF-Yq-gKe" secondAttribute="bottom" constant="5" id="oC6-5n-ta2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="containerView" destination="ZPF-Yq-gKe" id="gG8-aX-qLn"/>
+                <outlet property="lineLabel" destination="BUe-c6-NR3" id="VgH-En-AB5"/>
+                <outlet property="rewardLabel" destination="Zia-2I-szd" id="UO7-RC-GEB"/>
+            </connections>
+            <point key="canvasLocation" x="33.600000000000001" y="112.44377811094454"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="competitionRewardIcon" width="100" height="100"/>
+    </resources>
+</document>

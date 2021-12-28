@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PlayAndWinCollectionViewCell" customModule="CrowdWisdom" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="110" height="136"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="110" height="136"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Tg-bZ-MCF">
+                        <rect key="frame" x="0.0" y="0.0" width="110" height="136"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lpW-eq-lAu">
+                                <rect key="frame" x="0.0" y="0.0" width="110" height="126"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bfd-NJ-QZD">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="dYE-Zy-Gw5"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7B-rI-Lmu">
+                                        <rect key="frame" x="2" y="84" width="106" height="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="StR-bx-Ugl" customClass="NSButton" customModule="CrowdWisdom" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="100" width="80" height="20"/>
+                                        <color key="backgroundColor" red="0.0" green="0.63529411759999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="YYY-r7-DvO"/>
+                                            <constraint firstAttribute="width" constant="80" id="xwc-dS-GJE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="10"/>
+                                        <state key="normal" title="PLAY NOW">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.0" green="0.63529411759999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="bfd-NJ-QZD" firstAttribute="leading" secondItem="lpW-eq-lAu" secondAttribute="leading" id="1Pv-4S-Z6w"/>
+                                    <constraint firstItem="StR-bx-Ugl" firstAttribute="top" secondItem="q7B-rI-Lmu" secondAttribute="bottom" constant="4" id="8X4-1F-sg7"/>
+                                    <constraint firstAttribute="bottom" secondItem="StR-bx-Ugl" secondAttribute="bottom" constant="6" id="JUc-DN-D2h"/>
+                                    <constraint firstAttribute="trailing" secondItem="bfd-NJ-QZD" secondAttribute="trailing" id="Ri1-Zv-6Mq"/>
+                                    <constraint firstItem="bfd-NJ-QZD" firstAttribute="top" secondItem="lpW-eq-lAu" secondAttribute="top" id="T0f-Cf-AF9"/>
+                                    <constraint firstAttribute="trailing" secondItem="q7B-rI-Lmu" secondAttribute="trailing" constant="2" id="eAI-0m-ch3"/>
+                                    <constraint firstItem="q7B-rI-Lmu" firstAttribute="leading" secondItem="lpW-eq-lAu" secondAttribute="leading" constant="2" id="sj4-K2-ykW"/>
+                                    <constraint firstItem="q7B-rI-Lmu" firstAttribute="top" secondItem="bfd-NJ-QZD" secondAttribute="bottom" constant="4" id="sjY-Ps-wl7"/>
+                                    <constraint firstItem="StR-bx-Ugl" firstAttribute="centerX" secondItem="lpW-eq-lAu" secondAttribute="centerX" id="wty-r9-1Uy"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lpW-eq-lAu" firstAttribute="leading" secondItem="Kep-L5-5PL" secondAttribute="leading" id="9tF-9L-SnR"/>
+                            <constraint firstItem="lpW-eq-lAu" firstAttribute="top" secondItem="Kep-L5-5PL" secondAttribute="top" id="AHk-FW-LDA"/>
+                            <constraint firstItem="Kep-L5-5PL" firstAttribute="bottom" secondItem="lpW-eq-lAu" secondAttribute="bottom" constant="10" id="Itl-Mg-1RJ"/>
+                            <constraint firstItem="lpW-eq-lAu" firstAttribute="trailing" secondItem="Kep-L5-5PL" secondAttribute="trailing" id="yfD-TP-il7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kep-L5-5PL"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="5Tg-bZ-MCF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Yux-rv-EDm"/>
+                <constraint firstAttribute="trailing" secondItem="5Tg-bZ-MCF" secondAttribute="trailing" id="Yv1-10-ojS"/>
+                <constraint firstItem="5Tg-bZ-MCF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="e04-rE-A3v"/>
+                <constraint firstAttribute="bottom" secondItem="5Tg-bZ-MCF" secondAttribute="bottom" id="ghA-77-VLt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="110" height="138"/>
+            <connections>
+                <outlet property="cellView" destination="lpW-eq-lAu" id="9Uh-5f-Fvc"/>
+                <outlet property="gameImageView" destination="bfd-NJ-QZD" id="hF7-6T-PZu"/>
+                <outlet property="gameNameLabel" destination="q7B-rI-Lmu" id="gT5-Fk-dwr"/>
+                <outlet property="playNowButtonTapped" destination="StR-bx-Ugl" id="eCM-G2-EGP"/>
+            </connections>
+            <point key="canvasLocation" x="180.80000000000001" y="188.00599700149925"/>
+        </collectionViewCell>
+    </objects>
+</document>

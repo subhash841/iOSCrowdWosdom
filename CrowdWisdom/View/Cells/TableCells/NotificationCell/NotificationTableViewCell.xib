@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="notificationCell" id="KGk-i7-Jjw" customClass="NotificationTableViewCell" customModule="CrowdWisdom" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kDV-dv-DRp">
+                        <rect key="frame" x="5" y="5" width="310" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fsdfsdf" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNt-BW-auD">
+                                <rect key="frame" x="60" y="8" width="240" height="20.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CY9-eJ-ONK">
+                                <rect key="frame" x="60" y="35" width="0.0" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="A3F-8H-HWF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8SX-Zq-wER">
+                                <rect key="frame" x="5" y="10" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="E2u-af-C0p"/>
+                                    <constraint firstAttribute="width" constant="40" id="uy8-cF-gGC"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GNt-BW-auD" firstAttribute="top" secondItem="kDV-dv-DRp" secondAttribute="top" constant="8" id="JKr-ei-4KA"/>
+                            <constraint firstItem="GNt-BW-auD" firstAttribute="leading" secondItem="8SX-Zq-wER" secondAttribute="trailing" constant="15" id="JyQ-zq-TGY"/>
+                            <constraint firstAttribute="trailing" secondItem="GNt-BW-auD" secondAttribute="trailing" constant="10" id="LJG-12-b4U"/>
+                            <constraint firstItem="8SX-Zq-wER" firstAttribute="top" secondItem="kDV-dv-DRp" secondAttribute="top" constant="10" id="TUM-9K-U4m"/>
+                            <constraint firstAttribute="bottom" secondItem="CY9-eJ-ONK" secondAttribute="bottom" constant="10" id="biq-zC-Tvv"/>
+                            <constraint firstItem="CY9-eJ-ONK" firstAttribute="leading" secondItem="8SX-Zq-wER" secondAttribute="trailing" constant="15" id="hUB-1Y-1p1"/>
+                            <constraint firstItem="8SX-Zq-wER" firstAttribute="leading" secondItem="kDV-dv-DRp" secondAttribute="leading" constant="5" id="qs2-9y-Kqh"/>
+                            <constraint firstItem="CY9-eJ-ONK" firstAttribute="top" secondItem="GNt-BW-auD" secondAttribute="bottom" constant="6.5" id="vlU-sa-rVm"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.40000000000000002"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="1" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="kDV-dv-DRp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="TyJ-60-gEW"/>
+                    <constraint firstAttribute="bottom" secondItem="kDV-dv-DRp" secondAttribute="bottom" constant="4.5" id="j25-ig-jH8"/>
+                    <constraint firstAttribute="trailing" secondItem="kDV-dv-DRp" secondAttribute="trailing" constant="5" id="suu-CC-mJ3"/>
+                    <constraint firstItem="kDV-dv-DRp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="zqq-Do-jlI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateTimeLabel" destination="CY9-eJ-ONK" id="IBP-Lo-1Lf"/>
+                <outlet property="notifiactionLabel" destination="GNt-BW-auD" id="x1w-0R-10e"/>
+                <outlet property="notificationTypeImage" destination="8SX-Zq-wER" id="lTy-2Y-Uln"/>
+            </connections>
+            <point key="canvasLocation" x="52.799999999999997" y="60.26986506746627"/>
+        </tableViewCell>
+    </objects>
+</document>

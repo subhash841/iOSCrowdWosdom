@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageViewController" customModule="CrowdWisdom" customModuleProvider="target">
+            <connections>
+                <outlet property="contentDataView" destination="5ok-In-qxI" id="yrc-g5-cAa"/>
+                <outlet property="mainImageView" destination="amQ-BX-AhO" id="uY8-1e-92R"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="amQ-BX-AhO">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ok-In-qxI">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="amQ-BX-AhO" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="AR4-dm-5sr"/>
+                <constraint firstItem="amQ-BX-AhO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Bxh-f9-GjI"/>
+                <constraint firstItem="5ok-In-qxI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="E4r-aH-GMf"/>
+                <constraint firstItem="5ok-In-qxI" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ENV-Nd-KCU"/>
+                <constraint firstItem="5ok-In-qxI" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Jay-I7-ige"/>
+                <constraint firstItem="5ok-In-qxI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Lbl-sd-ofb"/>
+                <constraint firstItem="amQ-BX-AhO" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="SO7-Tg-onV"/>
+                <constraint firstItem="amQ-BX-AhO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nwz-le-TRS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
